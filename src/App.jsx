@@ -6,10 +6,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/home/home';
 import { Login } from './pages/login/Login';
 import { Singup } from './pages/signup/Singup';
+import { Navbar } from './components/Navbar';
 
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route
           path='/'
